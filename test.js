@@ -13,7 +13,7 @@ app.post("/", function(req,res){
     var result = num1 + num2 ;
 
 
-    res.send("The result of the calculator is " + result );
+    res.send("The result of the calculation is " + result );
 });
 
 app.listen(3000,function(){

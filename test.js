@@ -1,7 +1,7 @@
-  const bodyParser = require('body-parser');
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
-app.put(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.urlencoded({extended:true}));
 app.get("/", function(req,res){
     res.sendFile(__dirname + "/index.html");
 })

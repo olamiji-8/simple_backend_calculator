@@ -16,6 +16,14 @@ app.post("/", function(req,res){
     res.send("The result of the calculation is " + result );
 });
 
+app.get("/bmicalculator",function(req,res){
+    res.sendFile(__dirname + "/bmi_calculator.html");
+});
+
+app.post("/bmicalculator", function(req,res){
+    res.send("You have been accepted");
+});
+
 app.listen(3000,function(){
     console.log('server started on port 3000');
 });

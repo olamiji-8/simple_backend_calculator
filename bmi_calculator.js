@@ -8,7 +8,7 @@ app.get("/",function(req,res){
     res.sendFile(__dirname + "/bmi_calculator.js");
 });
 
-app.post("/", function(){
+app.post("/", function(req,res){
     res.send("You have been accepted");
 });
 
